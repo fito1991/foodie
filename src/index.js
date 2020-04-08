@@ -1,12 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { useRoutes } from 'hookrouter';
 import './index.css';
-import App from './App';
+import routes from './router';
+import './fonts/DrukTextWide-Bold.ttf';
+import NotFound from './components/NotFound';
+// import App from './App';
 import * as serviceWorker from './serviceWorker';
+
+function Routes() {
+  const routeResult = useRoutes(routes);
+  return routeResult || <NotFound/>;
+}
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Routes />
   </React.StrictMode>,
   document.getElementById('root')
 );
