@@ -21,45 +21,6 @@ const Contact = ({stateData, setStateData}) => {
 
     const handleSubmit = e => {
         e.preventDefault();
-        // console.log(stateData);
-        // const mensaje = async () => {
-        //     const api = await fetch('https://api.elaniin.dev/api/contact');
-        //     const res = await api.json();
-        //     console.log(res);
-        // }
-        // mensaje();
-
-        // fetch('https://api.elaniin.dev/api/contact',{
-        //     method: "POST",
-        //     body: JSON.stringify(stateData),
-        //     header: {
-        //         'Accept': 'application/json',
-        //         'Content-Type': 'application/json'
-        //     },
-        //     mode: "no-cors"
-        // }).then(
-        //     (response) => (response.json())
-        // ).then((response) => {
-        //     if (response.status === 200) {
-        //         console.log('success');
-        //     }else if(response.status === 404){
-        //         console.log('error');
-        //     }else{
-        //         console.log(response.status);
-        //     }
-        // })
-
-        // axios.post('https://api.elaniin.dev/api/contact', {
-        //     name: 'Fred',
-        //     email: 'fred@mail.com',
-        //     message: 'mi mensaje'
-        //   })
-        //   .then(function (response) {
-        //     console.log(response);
-        //   })
-        //   .catch(function (error) {
-        //     console.log(error);
-        //   });
 
         axios('https://api.elaniin.dev/api/contact', {
             method: 'POST',
@@ -74,19 +35,6 @@ const Contact = ({stateData, setStateData}) => {
             console.log(e);
         });
 
-        // console.log(JSON.stringify(stateData));
-
-        // fetch('https://api.elaniin.dev/api/contact',{
-        //     method: 'POST',
-        //     body: JSON.stringify(stateData),
-        //     headers: {
-        //       'Accept': 'application/json',
-        //       'Content-Type': 'application/json'
-        //     },
-        // }).then(
-        //     res => res.json()
-        // ).catch(error => console.error('Error:', error))
-        // .then(response => console.log('Success:', response));
         
     }
 
