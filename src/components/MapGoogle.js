@@ -7,7 +7,7 @@ const MapGoogle = ({stateCoord}) => {
 
     const { ref, map, google } = useGoogleMaps(
         // Use your own API key, you can get one from Google (https://console.cloud.google.com/google/maps-apis/overview)
-        "AIzaSyCZanJwmim3u_FXxJFDytWJmIK9G32FvdQ",
+        "YOUR_API_KEY",
         // NOTE: even if you change options later
         {
           center: uluru,
