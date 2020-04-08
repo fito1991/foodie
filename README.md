@@ -1,8 +1,12 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 IMPORTANTE: Antes de instalar el proyecto debe tener instalado NodeJS en su computadora
-  
-      https://nodejs.org/es/
+
+    https://nodejs.org/es/
+
+IMPORTANTE: Para ver la funcionalidad de la sección de resturantes en el mapa de google maps de obtener una API_KEY 
+
+      https://developers.google.com/maps/documentation/javascript/get-api-key?hl=es-419
 
 ## Instalación del código
 
